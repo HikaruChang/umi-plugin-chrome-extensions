@@ -51,7 +51,7 @@ export const generateManifestFromConfig = (
   const backgroundStr = background?.service_worker ? background : undefined;
 
   // 处理 option 参数项
-  const option = {};
+  const option: chromeManifest.Option = {};
   if (typeof optionsUI === 'string') {
     option['options_ui'] = { page: 'options.html' };
   }
@@ -62,7 +62,7 @@ export const generateManifestFromConfig = (
     };
   }
   // 处理 popup 的参数项
-  const popup = {};
+  const popup: chromeManifest.Popup = {};
   if (typeof popupUI === 'string') {
     popup['action'] = {
       default_popup: 'popup.html',

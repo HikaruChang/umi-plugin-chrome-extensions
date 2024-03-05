@@ -67,7 +67,7 @@ declare namespace chromeManifest {
      * @see https://developer.chrome.com/docs/extensions/reference/pageAction/
      */
     page_action?: BrowserAction;
-    action?: string;
+    action?: string | BrowserAction;
     /**
      * 作者
      */
@@ -358,7 +358,7 @@ declare namespace chromeManifest {
 
   export interface OptionsUI {
     page: string;
-    open_in_tab: boolean;
+    open_in_tab?: boolean;
   }
 
   export type Permissions = SpecialPermissions | KnownPermissions | string;
