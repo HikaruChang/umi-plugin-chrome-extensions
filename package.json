@@ -39,7 +39,6 @@
     "tsc": "tsc -p tsconfig-check.json",
     "lint-staged": "lint-staged",
     "prettier": "prettier -c --write \"**/**\"",
-    "prepare": "husky install"
   },
   "lint-staged": {
     "*.ts?(x)": [
@@ -106,7 +105,7 @@
     },
     {
       "name": "Hikaru",
-      "email": "i@rua.moe",
+      "email": "i@rua.moe"
     }
   ]
 }
