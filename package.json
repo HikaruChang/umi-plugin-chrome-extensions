@@ -38,7 +38,7 @@
     "lint": "max lint",
     "tsc": "tsc -p tsconfig-check.json",
     "lint-staged": "lint-staged",
-    "prettier": "prettier -c --write \"**/**\"",
+    "prettier": "prettier -c --write \"**/**\""
   },
   "lint-staged": {
     "*.ts?(x)": [
